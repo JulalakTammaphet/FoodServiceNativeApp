@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_purple"
+    android:background="@android:color/holo_orange_light"
     tools:context=".homepage">
 
     <SearchView
@@ -20,138 +20,142 @@
         app:layout_constraintVertical_bias="0.014" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="336dp"
-        android:layout_height="47dp"
+        android:id="@+id/edittext3s"
+        android:layout_width="293dp"
+        android:layout_height="43dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginBottom="8dp"
         android:backgroundTint="#5E35B1"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="@android:string/search_go"
-        app:layout_constraintBottom_toTopOf="@+id/imagesweet"
         app:layout_constraintEnd_toStartOf="@+id/searchView"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imagebeverage"
+        android:id="@+id/imageViewWan"
+        android:layout_width="158dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="394dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext3s"
+        app:srcCompat="@drawable/wan"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textViewWanlamun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="462dp"
+        android:text="Wanlamun"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toEndOf="@+id/imageViewWan"
+        app:layout_constraintTop_toBottomOf="@+id/edittext3s"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonWan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="404dp"
+        android:background="@color/colorAccent"
+        android:text="ListMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewWan"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWanlamun" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="365dp"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewWan" />
+
+    <ImageView
+        android:id="@+id/ImageViewSala"
         android:layout_width="154dp"
-        android:layout_height="152dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/Beveragebtn"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
-        app:srcCompat="@drawable/beverage" />
-
-    <Button
-        android:id="@+id/Beveragebtn"
-        android:layout_width="146dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="19dp"
-        android:backgroundTint="#00ACC1"
-        android:text="Beverage"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toStartOf="@+id/Sweetbtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagebeverage" />
-
-    <Button
-        android:id="@+id/vietnambtn"
-        android:layout_width="140dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="35dp"
-        android:backgroundTint="#00ACC1"
-        android:text="Vietnam"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fastfoodbtn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
-
-    <Button
-        android:id="@+id/fastfoodbtn"
-        android:layout_width="137dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="67dp"
-        android:backgroundTint="#00ACC1"
-        android:text="Fastfood"
+        android:layout_height="120dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="217dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imagefastfood" />
-
-    <ImageView
-        android:id="@+id/imagefastfood"
-        android:layout_width="156dp"
-        android:layout_height="152dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/fastfoodbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/Sweetbtn"
-        app:srcCompat="@drawable/fastfood" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="150dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/vietnambtn"
-        app:layout_constraintEnd_toStartOf="@+id/imagefastfood"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Beveragebtn"
-        app:srcCompat="@drawable/vietnamfood" />
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/salaloy" />
+
+    <TextView
+        android:id="@+id/textViewSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="314dp"
+        android:text="@string/salaloy_seafood"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ImageViewSala"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <Button
-        android:id="@+id/Sweetbtn"
-        android:layout_width="145dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#00ACC1"
-        android:text="Sweet"
-        app:layout_constraintBottom_toTopOf="@+id/imagefastfood"
+        android:id="@+id/ButtonSala"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="249dp"
+        android:backgroundTint="#D81B60"
+        android:text="ListMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Beveragebtn"
-        app:layout_constraintTop_toBottomOf="@+id/imagesweet" />
+        app:layout_constraintStart_toEndOf="@+id/ImageViewSala"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSala" />
 
-    <ImageView
-        android:id="@+id/imagesweet"
-        android:layout_width="170dp"
-        android:layout_height="160dp"
+    <ImageButton
+        android:id="@+id/imageButtonback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/Sweetbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imagebeverage"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
-        app:layout_constraintVertical_bias="0.42000002"
-        app:srcCompat="@drawable/sweet" />
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewWan"
+        app:layout_constraintEnd_toStartOf="@+id/edittext3s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
