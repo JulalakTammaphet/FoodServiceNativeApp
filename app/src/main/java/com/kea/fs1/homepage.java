@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,16 @@ public class homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+    }
+
+    public void wanlaClick(View view){
+        Button gowanla = (Button)findViewById(R.id.buttonWan);
+        gowanla.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent wanla = new Intent(homepage.this,RestDetail.class);
+                startActivity(wanla);
+            }
+        });
     }
 
 
